@@ -93,6 +93,7 @@ button:hover{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .todos li{
@@ -106,6 +107,7 @@ button:hover{
 
 .todos li:nth-child(2n){
     background: #edf1f5;
+    color:#7f7fd5;
 }
 
 .todos li:hover span{
