@@ -1,7 +1,7 @@
 body{
-    min-height: 100%;
+    max-height: 100%;
     font-family: Bad Script;
-    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7f7fd5);
+    background: linear-gradient(to right bottom, #91EAE4, #86A8E7, #7f7fd5);
 
 }
 
@@ -10,7 +10,7 @@ h1{
     background: #86a8e7;
     color: white;
     margin: 0;
-    padding: 10px;
+    padding: 10px 28px;
     }
 
 input{
@@ -23,6 +23,7 @@ input{
     color: gray;
     height: 50px;
     font-size: 20px;
+    font-weight: 0.5px;
 
 }
 
@@ -39,6 +40,7 @@ span{
     text-align: center;
     height: 50px;
     width: 0;
+    opacity: 0;
     transition: 0.3s linear;
 }
 
@@ -61,4 +63,84 @@ button{
     cursor: pointer;
 
 
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid lightgreen;
+
+}
+
+#buttons{
+    display: inline-block;
+    text-align: center;
+    margin-left: 22%;
+    position: absolute;
+    bottom: 5px;
+}
+
+#todo{
+    margin: 0 auto;
+    box-shadow: 0 0 1em black;
+    height: 100%;
+    max-width: 400px;
+    background: #fff;
+    position: relative;
+
+}
+.todos{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todos li{
+    background: #7f7fd5;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.todos li:nth-child(2n){
+    background: #edf1f5;
+}
+
+.todos li:hover span{
+    width:50px;
+    opacity: 1;
+    margin-left: 5px;
+    color: #fff;
+
+
+}
+
+.display{
+    display: none;
+    transition: 0.3s linear;
+}
+
+.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-pencil-alt{
+    float: right;
+    padding-top: 8px;
+}
+
+.fa-trash-alt{
+    float: right;
+    color: #7f7fd5;
+}
+
+
+@media screen and (max-height: 450px){
+    #todo{
+        width: 100%;
+        height: 100%;
+    }
 }
