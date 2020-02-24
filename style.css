@@ -78,6 +78,7 @@ button:hover{
     margin-left: 22%;
     position: absolute;
     bottom: 5px;
+    margin-top: 20px;
 }
 
 #todo{
@@ -103,9 +104,15 @@ button:hover{
     cursor: pointer;
     font-size: 20px;
     color: #fff;
+    
 }
 
 .todos li:nth-child(2n){
+    background: #edf1f5;
+    color:#7f7fd5;
+}
+
+.todos li:nth-child(2n) i{
     background: #edf1f5;
     color:#7f7fd5;
 }
@@ -117,6 +124,9 @@ button:hover{
     color: #fff;
 
 
+}
+ul{
+    margin-bottom: 10px;
 }
 
 .display{
