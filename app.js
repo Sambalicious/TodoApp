@@ -10,7 +10,7 @@ let pencil = document.querySelector('#pencil');
 let saveBtn = document.querySelector('.save');
 let clearBtn = document.querySelector('.clear');
 let time = document.querySelector('#time');
-
+let toggle = document.querySelector('#toggle');
 function deleteTodo(){
     for(let span of spans){
         span.addEventListener('click', function(){
@@ -39,6 +39,7 @@ Input.addEventListener('keypress', function(e){
         let when= time.value;
         let newTodo = this.value;
         this.value = '';
+        
 
         icon.classList.add('fas', 'fa-trash');
         span.append(icon);
@@ -61,7 +62,7 @@ ul.addEventListener('click', function(e){
 ///hide input when pencil icon is clicked
 
 pencil.addEventListener('click', function(){
-    Input.classList.toggle('display');
+    toggle.classList.toggle('display');
 });
 
 //save todo for later use
